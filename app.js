@@ -13,14 +13,14 @@ function agregarAmigo() {
     }
     else {
         amigos.push(nombre);
-        document.getElementById("nombre").value = "";
+        document.getElementById("amigo").value = "";
         mostrarAmigos();
     }
 
 }
 // Muestra la lista de amigos en la interfaz
 function mostrarAmigos() {
-    let lista = document.getElementById("lista-amigos");
+    let lista = document.getElementById("listaAmigos");
     lista.innerHTML = "";
 }
 

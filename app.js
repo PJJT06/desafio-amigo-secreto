@@ -49,16 +49,26 @@ function sortearAmigo() {
         
     }
 
-
-
-
-
-    
-
-
 }
 
-   
+//Cabia de color el botón "Añadir" cuando el usuario escribe
+
+document.getElementById("amigo").addEventListener("input", function() {
+    const boton = document.querySelector(".button-add");
+    if (this.value.trim() !== "") {
+        boton.style.backgroundColor = "#FC4B08"; 
+    } else {
+        boton.style.backgroundColor = ""; 
+    }
+});
+
+// Agrega un evento al botón "Añadir" para llamar a la función agregarAmigo
+document.querySelector(".button-add").addEventListener("click", agregarAmigo);
+document.getElementById("amigo").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        agregarAmigo();
+    }
+});
 
 
 

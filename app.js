@@ -5,9 +5,9 @@ let amigos = [];
 
 function agregarAmigo() {
 
-    let nombre = document.getElementById("nombre").value;
+    let nombre = document.getElementById("amigo").value;
 
-    if (nombre.typeof !== "string" || nombre.trim() === "") {
+    if (typeof nombre !== "string" || nombre.trim() === "") {
         alert("Por favor, ingresa un nombre válido.");
         return;
     }
@@ -17,7 +17,11 @@ function agregarAmigo() {
         mostrarAmigos();
     }
 
-
+}
+// Muestra la lista de amigos en la interfaz
+function mostrarAmigos() {
+    let lista = document.getElementById("lista-amigos");
+    lista.innerHTML = "";
 }
 
    

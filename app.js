@@ -1,5 +1,7 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 // No es necesario que utilices ninguna librería externa, simplemente debes implementar la lógica en JavaScript puro.
+
+
 let amigos = [];
     // Agrega un amigo a la lista de amigos
 
@@ -18,6 +20,8 @@ function agregarAmigo() {
     }
 
 }
+
+
 // Muestra la lista de amigos en la interfaz
 function mostrarAmigos() {
     let lista = document.getElementById("listaAmigos");
@@ -30,6 +34,8 @@ function mostrarAmigos() {
     }
 }
 
+
+// Sortea un amigo de la lista y lo muestra en la interfaz
 function sortearAmigo() {
 
     if (amigos.length < 2) {

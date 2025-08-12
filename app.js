@@ -30,6 +30,34 @@ function mostrarAmigos() {
     }
 }
 
+function sortearAmigo() {
+
+    if (amigos.length < 2) {
+        alert("Agrega mas amigos para poder sortear.");
+        return;
+    }
+
+    else{
+
+        let indiceAleatorio = Math.floor(Math.random() * amigos.length);
+        let amigoSorteado = amigos[indiceAleatorio];
+        
+        amigos.splice(indiceAleatorio, 1);
+
+        document.getElementById("resultado").textContent = "Amigo sorteado: " + amigoSorteado;
+        mostrarAmigos();
+        
+    }
+
+
+
+
+
+    
+
+
+}
+
    
 
 
